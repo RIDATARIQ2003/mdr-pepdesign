@@ -1,0 +1,4 @@
+build-essential
+git
+wget
+openjdk-17-jdk-headless

@@ -1,0 +1,30 @@
+# ── SECRETS — never commit, ever ──
+.streamlit/secrets.toml
+
+# ── Bulk generated data — regenerated at runtime, not needed in git history ──
+data/folded/
+data/complex_top20/
+docking/ligands*/
+docking/results/
+p2rank_output/
+
+# ── P2Rank installation (358 MB) — never belongs in git, way over GitHub's
+# 100MB single-file limit anyway. Reinstalled fresh by tool_setup.py at
+# runtime on deploy, not needed locally in version control.
+p2rank_2.4.2/
+
+# ── Local job-runner status files — regenerate automatically every run,
+# no value in tracking history for these ──
+pipeline_jobs/
+
+# ── Tools downloaded/built at runtime by tool_setup.py — not tracked ──
+tools/
+
+# ── Python cruft ──
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ── OS cruft ──
+.DS_Store
+Thumbs.db
